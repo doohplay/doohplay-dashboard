@@ -1,0 +1,45 @@
+{
+  "name": "doohplay-dashboard",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint",
+    "generate:closure:pdf": "ts-node -P tsconfig.scripts.json scripts/generate-closure-pdf.ts",
+    "worker:financial": "ts-node -P tsconfig.scripts.json scripts/worker-financial-jobs.ts"
+  },
+  "dependencies": {
+    "@react-pdf/renderer": "^4.3.2",
+    "@signpdf/placeholder-pdf-lib": "^3.3.0",
+    "@signpdf/signer-p12": "^3.3.0",
+    "@supabase/auth-helpers-nextjs": "^0.15.0",
+    "@supabase/ssr": "^0.8.0",
+    "@supabase/supabase-js": "^2.90.0",
+    "chart.js": "^4.5.1",
+    "chrome-launcher": "^1.2.1",
+    "dotenv": "^17.2.3",
+    "next": "16.1.1",
+    "node-signpdf": "^3.0.0",
+    "pdfkit": "^0.17.2",
+    "puppeteer": "^24.34.0",
+    "puppeteer-core": "^24.34.0",
+    "qrcode": "^1.5.4",
+    "react": "19.2.3",
+    "react-chartjs-2": "^5.3.1",
+    "react-dom": "19.2.3",
+    "recharts": "^3.6.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.1.1",
+    "tailwindcss": "^4",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  }
+}
